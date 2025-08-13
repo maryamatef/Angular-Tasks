@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+.header{
+    color: #AA60C8 !important;
+}
+.line-icon {
+    width: 35%;
+}
+.line-icon::before,
+.line-icon::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    border: 3px white solid;
+}
+
+.line-icn::before,
+.line-icn::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    border: 3px #AA60C8 solid;
+}
+
+.bg-bink {
+  background-color: #D69ADE;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+}

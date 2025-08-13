@@ -1,0 +1,21 @@
+:host {
+    display: block;
+    min-height: 100vh !important;
+}
+.bg-bink {
+    background-color: #D69ADE;
+    opacity: 0.8;
+}
+.inner .layer {
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.6s;
+    opacity: 0;
+    right: 0%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+.inner:hover .layer {
+    opacity: 0.8;
+}

@@ -1,0 +1,21 @@
+<section>
+    <div class="container text-center">
+        <div class="w-50 mx-auto">
+            <h1 class="header fs-1 text-uppercase fw-bolder text-center pt-5 mt-4 mb-3">portfolio component</h1>
+            <div class="header line-icn line-icon d-flex justify-content-center align-items-center mx-auto">
+                <i class="fa-solid fa-star mx-3"></i>
+            </div>
+        </div>
+        <div class="row">
+            @for(portofolioCard of portofolioCards; track $index) 
+            {<div class="col-md-4 col-sm-6 col-xs-12 mb-1">
+                <div class="inner position-relative my-3 mx-2">
+                    <img class="d-block rounded-3 w-100" [src]="portofolioCard" alt="portofolioCard">
+                    <div class="layer () rounded-3 w-100 bg-bink d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>}
+        </div>
+    </div>
+</section>

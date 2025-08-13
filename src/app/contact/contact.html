@@ -1,0 +1,40 @@
+<section class="py-5 mx-auto">
+  <div class="w-50 mx-auto">
+    <h1 class="header fs-1 text-uppercase fw-bolder text-center mt-5">contact section</h1>
+    <div class="header line-icn line-icon d-flex justify-content-center align-items-center mb-3 mx-auto">
+      <i class="fa-solid fa-star mx-3"></i>
+    </div>
+  </div>
+  <form class="mx-auto w-50 row mt-4 pt-5">
+    <div class="row mb-3 gx-0">
+      <div class="input-wrapper" [class.active]="isNameLabelVisible">
+        <label for="formName" class="floating-label header mb-3">userName:</label>
+        <input class="border-0 border-bottom form-control" type="text" id="formName" (input)="revealLabel('name', $event)"
+          placeholder="userName" />
+      </div>
+    </div>
+    <div class="row mb-3 gx-0">
+      <div class="input-wrapper" [class.active]="isAgeLabelVisible">
+        <label for="formAge" class="floating-label header mb-3">userAge:</label>
+        <input class="border-0 border-bottom form-control" type="text" id="formAge" (input)="revealLabel('age', $event)"
+          placeholder="userAge" />
+      </div>
+    </div>
+    <div class="row mb-3 gx-0">
+      <div class="input-wrapper" [class.active]="isEmailLabelVisible">
+        <label for="formEmail" class="floating-label header mb-3">userEmail:</label>
+        <input class="border-0 border-bottom form-control" type="email" id="formEmail" (input)="revealLabel('email', $event)"
+          placeholder="userEmail" />
+      </div>
+    
+    </div>
+    <div class="row mb-3 gx-0">
+      <div class="input-wrapper" [class.active]="isPasswordLabelVisible">
+        <label for="formPass" class="floating-label header mb-3">userPassword:</label>
+        <input class="border-0 border-bottom form-control" type="password" id="formPass" (input)="revealLabel('password', $event)"
+          placeholder="userPassword" />
+      </div>
+    </div>
+    <button class="btn bg-bink d-block text-white" name="user" type="submit">send message</button>
+  </form>
+</section>

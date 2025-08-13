@@ -1,0 +1,12 @@
+:host{
+    display: block;
+    background-color: #AA60C8;
+}
+.zEnd {
+  background-color: #31153c;
+}
+i::before{
+  border: 1px white solid;
+  border-radius: 50%;
+  padding: 0.5em;
+}
